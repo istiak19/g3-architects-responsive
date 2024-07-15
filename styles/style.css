@@ -6,3 +6,74 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  /* Shared styles */
+.display-flex{
+    display: flex;
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+}
+
+  /*Header styles*/
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.nav-items{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #424242;
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Banner styles */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+/* Responsive media query */
+
+@media screen and (max-width: 576px) {
+    .nav-links, .navbar{
+        flex-direction: column;
+    }
+}
